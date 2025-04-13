@@ -1,0 +1,97 @@
+button:hover{
+    background: #E1EEBC;
+    color:#90C67C;
+}
+.paint-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#67AE6E;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.layer-button-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas {
+    border: solid 10px #90C67C;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.pic {
+    border: solid 10px #90C67C;
+    border-radius: 10px;
+}
+
+.general-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #90C67C;
+    border: 5px solid #E1EEBC;
+    border-radius: 10px;
+    color: #E1EEBC;
+    width: 100px;
+    height: fit-content;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin: 0px 20px 10px 20px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 500px
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.color-square {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    margin-right:  10px;
+    border: solid 5px #90C67C;
+    border-radius: 10px;
+}
+
+.color-selection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.misc-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-options {
+    display: flex;
+    flex-direction: row;
+}
+
+select {
+    background-color: #90C67C;
+    border-radius: 5px;
+    border: #E1EEBC 5px solid;
+    margin-left: 20px;
+    color: #E1EEBC;
+    height: 40px;
+    width: 100px;
+}

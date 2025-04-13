@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Paint</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="paint-container" onload="main()">
+        <div class="main-content">
+            <div id="layers" class="layers">
+                <ol id="layerList" class="front-end-layers">
+                    <li>Layer 0</li>
+                </ol>
+                <div class="layer-button-controls">
+                    <button onclick="addLayer()">Add Layer</button>
+                    <button onclick="removeLayer()">Remove Selected Layer</button>
+                </div>
+                <select id="layerOptions">
+                    <option value="0">Layer 0</option>
+                </select>
+            </div>
+            <canvas class="canvas" id="webgl" width="400" height="400">
+                Please use browser that supports "canvas"
+            </canvas>
+            <img class="pic" src="IMG_1845 - Copy.png" width="400" height="400"/>
+        </div>
+        <div class="general-input">
+            <button class="clear-button" onclick="clearCanvas()">Clear</button>
+            <button class="draw-pic-button" onclick="drawPicture()">Draw Picture</button>
+            <select name="shapes" id="shapes">
+                <option value="point">Square</option>
+                <option value="triangle">Triangle</option>
+                <option value="circle">Circle</option>
+            </select>
+        </div>
+        <div class="slider-options">
+            <div id="color-square" class="color-square">
+            </div>
+            <div class="color-selection">
+                <div class="slider">
+                    <label>Red: </label>
+                    <input type="range" min="0" max="100" value="100" id="Red">
+                </div>
+                <div class="slider">
+                    <label>Green: </label>
+                    <input type="range" min="0" max="100" value="100" id="Green">
+                </div>
+                <div class="slider">
+                    <label>Blue: </label>
+                    <input type="range" min="0" max="100" value="100" id="Blue">
+                </div>
+                <div class="slider">
+                    <label>Alpha: </label>
+                    <input type="range" min="0" max="100" value="100" id="Alpha">
+                </div>
+            </div>
+            <div class="misc-options">
+                <div class="slider">
+                    <label>Size: </label>
+                    <input type="range" min="0" max="100" value="10" id="size">
+                </div>
+                <div class="slider">
+                    <label>Segments (Circle): </label>
+                    <input type="range" min="4" max="100" value="10" id="segments">
+                </div>
+            </div>
+        </div>
+        <p>
+            For awesomeness points I tried to implement a layering system that allows you to add, remove, and edit specific layers.
+            I also added transparent colors with the alpha value. Also you can see what kind of color you selected before you place it on the canvas. I also styled a little bit of the webpage with CSS.
+            Also to select shapes, it is a dropdown menu instead of buttons. I thought it made more sense.
+        </p>
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="Point.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Circle.js"></script>
+        <script src="paint.js"></script>
+    </body>
+</html>
