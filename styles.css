@@ -95,3 +95,7 @@ select {
     height: 40px;
     width: 100px;
 }
+
+p {
+    align-self:flex-start;
+}
